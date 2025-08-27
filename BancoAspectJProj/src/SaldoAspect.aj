@@ -5,7 +5,7 @@ public aspect SaldoAspect {
         execution(* Conta+.sacar(double)) && this(conta) && args(valor) {
 
         if (conta.getSaldo() < valor) {
-            System.out.println("⚠️ Erro: saldo insuficiente na conta " + conta.getTipoConta());
+            System.out.println("Erro: saldo insuficiente na conta " + conta.getTipoConta());
             throw new RuntimeException("Saldo insuficiente");
         }
     }
