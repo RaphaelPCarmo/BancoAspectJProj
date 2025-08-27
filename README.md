@@ -22,7 +22,7 @@ A parte da lógica das contas foi feita em POO, enquanto a **verificação de sa
 - AspectJ  
 - Eclipse + AJDT  
 
----
+
 
 ## 🚀 Como funciona
 1. O cliente tenta sacar um valor de qualquer tipo de conta.  
@@ -38,7 +38,7 @@ Esse projeto foi uma ótima oportunidade de:
 - Praticar a **separação de responsabilidades** entre POO e POA.  
 - Ver na prática como o AspectJ pode ser aplicado em situações reais.  
 
----
 
+---
 ## 📌 Observação
 O foco não é criar um sistema bancário completo, mas sim **demonstrar a aplicação de aspectos** em um contexto simples e claro.  
