@@ -1,25 +1,34 @@
-# Projeto Banco com AspectJ
+# 💡 Projeto Banco com AspectJ
 
-Este projeto simula um sistema bancário simples, onde é possível realizar saques em diferentes tipos de contas: corrente, salário, poupança e investimento.  
+Este repositório traz uma implementação simples de um sistema bancário utilizando **Programação Orientada a Objetos (POO)** e **Programação Orientada a Aspectos (POA)**.  
 
-A lógica principal das contas foi feita com Programação Orientada a Objetos, enquanto a verificação de saldo foi tratada como um aspecto separado usando AspectJ. Assim, sempre que o saldo for insuficiente, uma mensagem de log é registrada automaticamente.
+A proposta foi unir os dois paradigmas para resolver um problema clássico:  
+- O cliente pode realizar **saques em diferentes contas** (corrente, salário, poupança e investimento).  
+- Sempre que o saldo for insuficiente, um **log de erro** deve ser gerado automaticamente.  
 
----
+A parte da lógica das contas foi feita em POO, enquanto a **verificação de saldo** foi tratada como um **aspecto transversal**, implementado com **AspectJ**.  
 
-## Como funciona
-- O cliente solicita um saque em qualquer conta.  
-- O aspecto de verificação entra em ação antes da operação.  
-- Se não houver saldo suficiente, o log de erro é exibido.  
-- Caso contrário, o saque é concluído normalmente.  
+## 🎯 Objetivo
+- Explorar conceitos de **POO e POA juntos**.  
+- Mostrar como o uso de aspectos reduz a repetição de código.  
+- Ter um exemplo prático e didático do paradigma orientado a aspectos aplicado em Java.  
 
----
-
-## Tecnologias
+## 🛠️ Tecnologias
 - Java  
 - AspectJ  
-- Eclipse (com suporte ao AspectJ)  
+- Eclipse + AJDT  
 
----
+## 🚀 Como funciona
+1. O cliente tenta sacar um valor de qualquer tipo de conta.  
+2. Antes da execução do saque, o **aspecto de verificação** entra em ação.  
+3. Caso o saldo seja insuficiente, um log de erro é registrado automaticamente.  
+4. Se houver saldo, o saque acontece normalmente.  
 
-## Nota
-O objetivo é mostrar de forma simples como separar regras transversais (como logs) usando aspectos, evitando repetição de código.
+## 📚 Aprendizados
+Esse projeto foi uma ótima oportunidade de:  
+- Entender melhor como funcionam **concerns transversais** (como logs).  
+- Praticar a **separação de responsabilidades** entre POO e POA.  
+- Ver na prática como o AspectJ pode ser aplicado em situações reais.  
+
+## 📌 Observação
+O foco não é criar um sistema bancário completo, mas sim **demonstrar a aplicação de aspectos** em um contexto simples e claro.  
